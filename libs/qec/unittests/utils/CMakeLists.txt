@@ -194,6 +194,8 @@ target_include_directories(hololink_fpga_syndrome_playback
 target_link_libraries(hololink_fpga_syndrome_playback
   PRIVATE
     ${HOLOLINK_CORE_LIB}
+    ${HOLOLINK_COMMON_LIB}
+    fmt::fmt-header-only
     CUDA::cudart
     CUDA::cuda_driver
     Threads::Threads)
